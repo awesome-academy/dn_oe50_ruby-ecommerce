@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_12_09_084744) do
+=======
+ActiveRecord::Schema.define(version: 2021_12_09_084952) do
+>>>>>>> add_to_cart
 
   create_table "accounts", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "fullname"
@@ -79,7 +83,7 @@ ActiveRecord::Schema.define(version: 2021_12_09_084744) do
   create_table "oders_details", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.integer "oder_id"
     t.integer "product_id"
-    t.integer "price"
+    t.integer "total_price"
     t.integer "quantity"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

@@ -24,10 +24,17 @@
               </div>  
             </td>
             <td><%= number_to_currency item[:product].price %></td>
+<<<<<<< HEAD
               <%= form_with(url: update_carts_path(item[:product]), local: false, method: :put) do |f| %>
               <td class="quantity">
                 <%= f.number_field :quantity, value: item[:quantity], min: 1, class: "form-control text-center change-quatity"%>
                 <%= f.hidden_field :id, value: item.dig(:product)&.id, class: "cart_product_id" %>
+=======
+            <%= form_with(url: update_carts_path(item[:product]), local: false, method: :put) do |f| %>
+              <td class="quantity">
+                <%= f.number_field :quantity, value: item[:quantity], min: 1, class: "form-control text-center change-quatity" %>
+                <%= f.hidden_field :id, value: item.dig(:product)&.id %>
+>>>>>>> add_to_cart
               </td>
             <% end %>
             <td data-th="subtotal" class="text-center"><%= number_to_currency line_total_price(item) %></td>
