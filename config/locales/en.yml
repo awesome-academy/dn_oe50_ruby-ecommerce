@@ -105,6 +105,7 @@ en:
     email_empty: "Email is cannot be empty"
     password_empty: "Password is cannot be empty"
     password_same: "Must be the same as the password"
+<<<<<<< HEAD
   admin:
     layouts:
       admin: "ADMIN"
@@ -120,6 +121,10 @@ en:
       add_product: "Add product"
       product_list: "Product list"
       orders_list: "Orders list"
+=======
+  sessions: 
+    remember_me: "Remember me"
+>>>>>>> remember_password
   cart:
     cart: "Cart"
     cart_add: "Cart Update"
